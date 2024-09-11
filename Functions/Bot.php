@@ -1,17 +1,26 @@
 <?php
 
-function Articmi($method, $data = [])
+function Articmi($method, $datas = [])
 {
     global $config;
-    $tgurl = "https://api.telegram.org/bot" . $config['botToken'] . "/" . $method;
+    $url = "https://api.telegram.org/bot" . $config['botToken'] . "/" . $method;
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $tgurl);
+    curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $datas);
+    
+    // Disable SSL verification
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+    $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
     $response = curl_exec($ch);
 
+    error_log("HTTP code: " . $http_code . "\n", 3, 'error_log.txt');
+    error_log("Response: " . $response . "\n", 3, 'error_log.txt');
+
     if (curl_error($ch)) {
-        var_dump(curl_error($ch));
+        file_put_contents('error_log.txt', "Curl error: " . curl_error($ch) . "\n", FILE_APPEND);
     } else {
         return json_decode($response);
     }

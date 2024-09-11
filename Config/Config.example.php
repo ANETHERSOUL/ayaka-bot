@@ -9,7 +9,7 @@
 | It can be obtained from https://telegram.dog/BotFather
 |
 */
-$config['botToken'] = "7285959222:AAG8L4mIdSlZbY1Zs636VOFnuJM435K2ZU8";
+$config['botToken'] = "";
 
 /*
 |--------------------------------------------------------------------------
@@ -53,10 +53,10 @@ $config['timeZone'] =  "America/Managua";
 | Database to Store User Data
 |
 */
-$config['db']['hostname'] =  "localhost";
-$config['db']['username'] =  "root";
+$config['db']['hostname'] =  "";
+$config['db']['username'] =  "";
 $config['db']['password'] =  "";
-$config['db']['database'] =  "art_ayaka_bot";
+$config['db']['database'] =  "";
 
 /*
 |--------------------------------------------------------------------------
