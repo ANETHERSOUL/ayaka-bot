@@ -1,4 +1,4 @@
 ngrok.exe
 error_log.txt
 updates_log.txt
-Config/Config.php
+./Config/Config.php
