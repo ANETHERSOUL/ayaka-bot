@@ -1,14 +1,14 @@
 <?php
 
 $startmessage = "
-¡Hola, <b>@$username</b>! 🌟\n
+¡Hola, <b>$firstname</b>! 🌟\n
 ¡Bienvenido al bot de <b>@ayakagen_bot</b>! 🙌 Estamos emocionados de tenerte aquí. Nuestro bot está diseñado para ofrecerte una experiencia increíble con <b><a href='https://t.me/genshinart2024'>Genshin Impact</a></b>. 🎮✨\n
 Explora las funciones exclusivas que tenemos para ti y únete a nuestra comunidad de jugadores apasionados. Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarnos.\n
 ¡Disfruta de tu tiempo aquí y que tengas un gran día! 🌟
 ";
 
 $welcomemessage = "
-🌟 ¡Hola,  <b>@$username</b>! 🌟\n
+🌟 ¡Hola,  <b>$firstname</b>! 🌟\n
 Bienvenido a <b>$groupname</b> 🎉. Estamos muy contentos de tenerte con nosotros. Aquí encontrarás una comunidad apasionada por Genshin Impact y muchos recursos útiles para mejorar tu experiencia en el juego.\n
 <b>🚀 ¿Qué puedes hacer aquí?</b>\n
 1. Participar en discusiones sobre estrategias, eventos y personajes de Genshin Impact.
@@ -22,4 +22,17 @@ Bienvenido a <b>$groupname</b> 🎉. Estamos muy contentos de tenerte con nosotr
 Proximamente en la linea de comandos.\n
 Si tienes alguna pregunta o necesitas ayuda, no dudes en preguntar. ¡Estamos aquí para ayudarte!\n
 ¡Disfruta y juega con responsabilidad! 🌟
+";
+
+$ayaka_build = "
+<b>≛ ᴀʏᴀᴋᴀ ʙᴏᴛ</b>
+
+<b>Name: <em>Kamisato Ayaka</em></b>
+<b>Star: ⭐️⭐️⭐️⭐️⭐️</b>
+<b>Type: <em>DPS</em></b>
+<b>Constelation: <em>Grus Nivis</em></b>
+<b>Set: <em>Nomada del Invierno</em></b>
+<b>Banner: <em>Promocional</em></b>
+
+<b>Bot by:<a href='tg://user?id=5876771491'> ᴀ ɴᴇᴛʜᴇʀꜱᴏᴜʟ</a></b>
 ";

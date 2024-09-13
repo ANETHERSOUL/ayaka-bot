@@ -9,3 +9,9 @@ $buttons = [
         ['text' => 'Group', 'url' => 'https://t.me/genshinart2024']
     ]
 ];
+
+$ayaka_but = [
+    [
+        ['text' => 'Show Data More', 'url' => 'https://telegra.ph/Ayaka-Build-09-11']
+    ]
+];

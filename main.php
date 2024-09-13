@@ -15,6 +15,9 @@
 # - Include Commands
     include __DIR__ . "/Modules/welcome.php";
 
+# - Include Build Commands
+    include __DIR__ . "/Modules/builds.php";
+
 # - Start Bot
 if (isset($message) && !is_null($message))
 {
